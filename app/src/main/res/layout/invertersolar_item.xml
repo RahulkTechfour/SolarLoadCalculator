@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#DBECF2"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#DBECF2"
+    android:layout_margin="15dp"
+    >
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text=""
+     android:id="@+id/tv_inverterfeature"
+     android:textColor="#000"
+     />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:background="#ffffff"
+       android:orientation="vertical"
+       >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- ISOT Technology "
+        android:id="@+id/tv_inverterfeatureone"
+        android:layout_marginTop="15dp"
+        />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="- ECO and UPS Mode"
+           android:id="@+id/tv_inverterfeaturetwo"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="- Pure Sine Wave Output"
+           android:id="@+id/tv_inverterfeaturethree"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="- 2 years Warranty"
+          android:id="@+id/tv_inverterfeaturefour"
+           />
+   </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

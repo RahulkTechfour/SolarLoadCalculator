@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBECF2"
+    tools:context=".fragment.SelectYourLoadFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/selecthomeapp_relone"
+        android:background="#2A4B99"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOLAR LOAD CALCULATOR"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="22dp"
+        android:layout_below="@+id/selecthomeapp_relone"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT YOUR LOAD"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:id="@+id/tv_selectload"
+            android:textAlignment="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#ffffff"
+            android:id="@+id/fragbacksav_relone"
+            android:layout_below="@+id/tv_selectload"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT HOME"
+                android:textSize="15sp"
+                android:id="@+id/tv_selecthome"
+                android:textColor="#000"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APPLIANCES"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_selecthome"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fragbacksav_relone"
+            android:id="@+id/tv_orloadfrag"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/tv_orloadfrag"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MANUALLY ENTER"
+                android:textSize="15sp"
+                android:id="@+id/tv_manuallyententer"
+                android:textColor="#000"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RUNNING LOAD"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_manuallyententer"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

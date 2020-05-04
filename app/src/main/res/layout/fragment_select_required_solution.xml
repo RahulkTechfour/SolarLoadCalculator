@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBECF2"
+    tools:context=".fragment.SelectRequiredSolutionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/backup_relone"
+        android:background="#2A4B99"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOLAR LOAD CALCULATOR"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="22dp"
+        android:layout_below="@+id/backup_relone"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SELECT REQUIRIED SOLUTIONS"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:id="@+id/tv_selectreqsolution"
+            android:textAlignment="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#ffffff"
+            android:id="@+id/fragbacksav_relone"
+            android:layout_below="@+id/tv_selectreqsolution"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BACK-UP"
+                android:textSize="15sp"
+                android:id="@+id/tv_backup"
+                android:textColor="#000"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OFF-GRID SOLUTION"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_backup"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#ffffff"
+            android:layout_below="@+id/fragbacksav_relone"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVING"
+                android:textSize="15sp"
+                android:id="@+id/tv_saving"
+                android:textColor="#000"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ON-GRID SOLUTION"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_saving"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

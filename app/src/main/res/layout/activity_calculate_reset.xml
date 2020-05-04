@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent"
+    tools:context=".CalculateResetActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/calculatereset_relone"
+        android:background="#2A4B99"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOLAR LOAD CALCULATOR"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/calculatereset_relone"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DBECF2"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/calculatereset_relone"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/calculatereset_linone"
+        android:background="#DBECF2"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="12dp"
+
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Load Connected to inverter(watt)*"
+            android:textSize="15sp"
+
+            android:textColor="#646667"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_border"
+            android:padding="10dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Average Running Load(%)"
+                android:textSize="15sp"
+
+                android:textColor="#646667"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Total Load(watt)during power Cut"
+                android:textSize="15sp"
+
+                android:textColor="#646667"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Backup Time (in hrs)"
+                android:textSize="15sp"
+                android:textColor="#646667"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    android:weightSum="2"
+    >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="calculate"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_marginRight="12dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/blue_button_round_corner_bg"
+            android:layout_below="@+id/selectappliance_reltwo"
+            />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:textSize="14sp"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/resetbtn_border"
+        android:layout_below="@+id/selectappliance_reltwo"
+        />
+</LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="12dp"
+        android:id="@+id/calculatereset_reltwo"
+        android:layout_below="@+id/calculatereset_linone"
+        android:background="#DAD7D7"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#263D94"
+    android:textSize="20sp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:text="Your perfect Solar Solution"
+    />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="12dp"
+            android:id="@+id/calculatereset_relfour"
+            android:layout_below="@+id/calculatereset_reltwo"
+            android:background="#263D94"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calculatereset_relthree"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:id="@+id/tv_solarinverter"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:text="SOLAR INVERTER"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:text="SOLAR BATTERY"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/tv_solarinverter"
+                   android:textAlignment="textEnd"
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/calculatereset_relthree"
+                android:background="#ffffff"
+                android:id="@+id/calulatereset_relfour"
+                >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="NXG+ 750"
+    android:textSize="18sp"
+    android:layout_centerVertical="true"
+    android:layout_alignParentStart="true"
+    android:id="@+id/tv_solarinvertervalue"
+    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NXG+ 750"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:textAlignment="textEnd"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/tv_solarinvertervalue"
+                    android:id="@+id/tv_solarbatteryvalue"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="KNOW MORE"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_calresetknowmores"
+            android:onClick="btnknowmore"
+            android:background="@drawable/knowmore_btnborer"
+            android:layout_below="@+id/calculatereset_relfour"
+            />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</RelativeLayout>

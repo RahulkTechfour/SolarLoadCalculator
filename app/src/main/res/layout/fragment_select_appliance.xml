@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBECF2"
+    tools:context=".fragment.SelectApplianceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/selectappliance_relone"
+        android:background="#2A4B99"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SOLAR LOAD CALCULATOR"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/selectappliance_relone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:id="@+id/selectapp_relone"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SELECT APPLIANCE:"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+                />
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                >
+                <EditText
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:textSize="15sp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_margin="12dp"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:id="@+id/et_selectappliancesearch"
+                    android:background="@drawable/light_gray_round_corner_bg"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/selectappliance_submitbtn"
+            android:textColor="#ffffff"
+            android:background="@drawable/blue_button_round_corner_bg"
+            android:layout_below="@+id/selectapp_relone"
+            />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/appliance_list"
+    android:layout_below="@+id/selectappliance_submitbtn"
+    />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:weightSum="3"
+            android:id="@+id/selectappliance_linone"
+            android:layout_below="@+id/appliance_list"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APPLIANCES"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUANTITY"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WATTAGE"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:id="@+id/selectappliance_recycle"
+            android:layout_below="@+id/selectappliance_linone"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:id="@+id/selectappliance_reltwo"
+            android:layout_below="@+id/selectappliance_recycle"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL WATTAGE"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/selectappliance_nextbtn"
+            android:textColor="#ffffff"
+            android:background="@drawable/blue_button_round_corner_bg"
+            android:layout_below="@+id/selectappliance_reltwo"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
